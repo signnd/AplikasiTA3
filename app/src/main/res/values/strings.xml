@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Aplikasi Penerjemah Aksara Bali</string>
+    <string name="welcome">Selamat Datang</string>
+    <string name="enter">Terjemahkan</string>
+    <string name="about">Tentang</string>
+    <string name="takepic">Ambil Gambar</string>
+    <string name="choosepic">Pilih Gambar</string>
+    <string name="back">Kembali</string>
+    <string name="result">Hasil Terjemahan: </string>
+    <string name="about_h1">Tentang Aplikasi</string>
+    <string name="about_p1">Aplikasi Pemindai Aksara Bali adalah aplikasi yang dapat mendeteksi aksara Bali dari gambar yang dimiliki pengguna. Pengguna dapat memilih gambar atau mengambil foto langsung dari kamera.</string>
+    <string name="about_h2">Cara Kerja Aplikasi</string>
+    <string name="about_p2">Aplikasi ini memanfaatkan Deep Learning dengan metode Convolutional Neural Network untuk mendeteksi ciri-ciri gambar yang diinputkan oleh pengguna. Di dalam model Deep Learning yang telah kami garap, kami telah melatih dataset dengan total ratusan gambar aksara Bali yang dibagi dalam kelas-kelas sesuai bunyi pengucapannya. Misalnya, kelas "a" berisi gambar aksara "a", kelas "na" berisi gambar aksara "na", dan seterusnya. Saat pengguna telah menginput gambar yang diambil dari kamera atau dipilih dari galeri, model yang kami miliki akan mengenali gambar tersebut untuk dikenali ciri-ciri di dalamnya, sehingga dapat diprediksi ciri-ciri tersebut memiliki kesamaan dengan kelas abjad aksara yang mana.</string>
+</resources>
