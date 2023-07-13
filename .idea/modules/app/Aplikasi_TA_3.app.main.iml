@@ -115,5 +115,6 @@
     <orderEntry type="library" name="Gradle: com.google.mlkit:vision-interfaces:16.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.mlkit:image-labeling-custom-common:17.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.mlkit:vision-internal-vkp:18.2.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.mlkit:image-labeling-default-common:17.0.0@aar" level="project" />
   </component>
 </module>

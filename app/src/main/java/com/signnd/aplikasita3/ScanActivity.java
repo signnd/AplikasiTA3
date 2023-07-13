@@ -18,12 +18,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.mlkit.common.model.LocalModel;
-import com.google.mlkit.vision.label.ImageLabel;
-import com.google.mlkit.vision.label.ImageLabeler;
-import com.google.mlkit.vision.label.ImageLabeling;
-import com.google.mlkit.vision.label.custom.CustomImageLabelerOptions;
-import com.signnd.aplikasita3.ml.ConvertedModel;
+import com.signnd.aplikasita3.ml.Bestmodel1;
+import com.signnd.aplikasita3.ml.Bestmodel2;
 import com.signnd.aplikasita3.ml.Model;
 
 import org.tensorflow.lite.DataType;
@@ -73,7 +69,7 @@ public class ScanActivity extends AppCompatActivity {
 
     public void classifyImage(Bitmap image) {
         try {
-            Model model = Model.newInstance(getApplicationContext());
+            Bestmodel1 model = Bestmodel1.newInstance(getApplicationContext());
 
             // Creates inputs for reference.
             TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 120, 120, 3}, DataType.FLOAT32);
@@ -95,7 +91,7 @@ public class ScanActivity extends AppCompatActivity {
             inputFeature0.loadBuffer(byteBuffer);
 
             // Runs model inference and gets result.
-            Model.Outputs outputs = model.process(inputFeature0);
+            Bestmodel1.Outputs outputs = model.process(inputFeature0);
             TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
 
             float[] confidences = outputFeature0.getFloatArray();
